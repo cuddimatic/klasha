@@ -51,6 +51,9 @@
     height: 42px;
     text-indent: 1rem;
     min-width: 300px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 .dash-btn .payout {
     background: #3D8F83;
@@ -72,6 +75,9 @@
     min-width: 180px;
     margin-left: 1rem;
     margin-right: 1rem;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 .calendar-svg {
@@ -249,6 +255,13 @@
   .topbar .header-mobile {
       background: rgba(196, 196, 196, 0.3) !important;
   }
+  .main-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2A2A2A;
+    margin: 1rem 1.5rem;
+}
 
 
 //   for mobile
@@ -291,11 +304,7 @@
     .topbar .top-navbar .navbar-header .navbar-brand {
         padding: 0 10px 0 10px;
     }
-}
-.main-title {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #2A2A2A;
-    margin: 1rem 1.5rem;
+    .dash-btn input {
+        min-width: 100%;
+    }
 }
