@@ -7,8 +7,8 @@ import {
     CardTitle,
 } from 'reactstrap';
 
-import profilephoto from '../../assets/images/users/1.jpg';
-import notify from '../../assets/images/users/2.png';
+import {ReactComponent as NotifyIcon} from '../../assets/images/notifyIcon.svg'
+import {ReactComponent as UserIcon} from '../../assets/images/userIcon.svg'
 
 /*--------------------------------------------------------------------------------*/
 /* Import images which are need for the HEADER                                    */
@@ -65,18 +65,8 @@ const Header = () => {
                     <Nav className="ml-auto float-right" navbar>
                         
                         <div className="d-flex mr-4">
-                            <img
-                                src={notify}
-                                alt="notify"
-                                className="rounded-circle"
-                                width="31"
-                            />
-                            <img
-                                src={profilephoto}
-                                alt="user"
-                                className="rounded-circle ml-3"
-                                width="31"
-                            />
+                            <NotifyIcon />
+                            <UserIcon className="ml-3" />
                         </div>
                     </Nav>
                 </Collapse>

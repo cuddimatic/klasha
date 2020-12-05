@@ -240,7 +240,7 @@
   }
 
   .logo-style {
-      height: 30px;
+      height: 25px;
       margin-left: 1rem;
   }
   .pay-out {
@@ -259,6 +259,7 @@
     }
     .calendar-mobile {
         flex-direction: column;
+        width: 100%;
         .admin-date {
             margin: 1rem 0;
             min-width: 100%;
