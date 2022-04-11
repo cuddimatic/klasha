@@ -13,8 +13,8 @@ import {ReactComponent as UserIcon} from '../../assets/images/userIcon.svg'
 /*--------------------------------------------------------------------------------*/
 /* Import images which are need for the HEADER                                    */
 /*--------------------------------------------------------------------------------*/
-import logoKlasha from '../../assets/images/klasha.png';
-import logoLight from '../../assets/images/klasha.png';
+import coincordLogo from '../../assets/svgs/logo.svg';
+import logoLight from '../../assets/svgs/logo.svg';
 
 const Header = () => {
 
@@ -42,7 +42,7 @@ const Header = () => {
                             />
                         </b> */}
                         <span className="logo-text">
-                            <img src={logoKlasha} alt="homepage" className="dark-logo logo-style" />
+                            <img src={coincordLogo} alt="homepage" className="dark-logo logo-style" />
                             <img
                                 src={logoLight}
                                 className="light-logo"

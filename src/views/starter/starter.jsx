@@ -3,7 +3,7 @@ import {
     Row,
     Col
 } from 'reactstrap';
-import { Projects } from 'components/dashboard-components';
+import { Projects } from '../../components/dashboard-components';
 import '../../assets/scss/all/custom/CustomStyles.scss'
 import {ReactComponent as ArrowDown} from '../../assets/svgs/arrowDown.svg'
 
