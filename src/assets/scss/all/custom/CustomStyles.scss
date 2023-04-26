@@ -1,53 +1,485 @@
 .background-full {
-    background: #fff;
+  background: #fff;
 }
 .for-table {
-    background: #F5F5F5;
-    tr th {
-        color: #2A2A2A;
-        border: 0;
-    }
+  tr th {
+    color: #2a2a2a;
+    border: 0;
+  }
 }
 .dashboard-table {
-    tr td {
-        color: #2A2A2A;
-        cursor: pointer;
-        border-bottom: 1px solid #EBEBEB;
-        border-top: 0px !important;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
+  tr td {
+    color: #2a2a2a;
+    cursor: pointer;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 0px !important;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 .dashboard-table tr:hover {
-    // border: 1px solid #2C665D;
-    border-radius: 10px;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
-    -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
-    transition: .3s ease-in-out;
+  //   background: #f5f5f5;
+  color: #ef2c5a;
+  border-radius: 10px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
 }
 .dashboard-table tr:hover td {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 .dash-btn .see-more {
-    border: 1px solid #EBEBEB;
-    width: 100%;
-    padding: 1rem;
-    background: transparent;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #2C665D;
-    cursor: pointer;
+  border: 1px solid #ebebeb;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  cursor: pointer;
 }
 .dash-btn .see-more:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 .dash-btn .payout:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .dash-btn input {
-    border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  height: 42px;
+  text-indent: 1rem;
+  min-width: 200px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.dash-btn .payout {
+  background: transparent;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  height: 42px;
+  cursor: pointer;
+  border: 0;
+  width: 100px;
+  border: 1.5px solid #000;
+  border-radius: 8px;
+  &:nth-of-type(2) {
+    margin-left: 10px;
+  }
+}
+.dash-btn .admin-date {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  height: 42px;
+  text-indent: 1rem;
+  min-width: 180px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.page-wrapper {
+  background: #fff !important;
+}
+
+.calendar-svg {
+  position: absolute;
+  right: 25px;
+  top: 14px;
+}
+
+.dash-acct {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .account-section {
+    width: 100%;
+  }
+}
+
+.account-section {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  height: 240px;
+  width: 100%;
+  &:nth-of-type(2) {
+    margin: 0 15px;
+  }
+  &:nth-of-type(3) {
+    margin-right: 15px;
+  }
+  &:hover {
+    background: #000;
+    color: #fff;
+    h5 {
+      color: #fff;
+    }
+    div h1 {
+      color: #fff;
+    }
+  }
+}
+
+.send-wire {
+  background: #ef2c5a;
+  border-radius: 8px;
+  height: 280px;
+  width: 38%;
+  color: #fff;
+  h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  button {
+    position: absolute;
+    bottom: 20px;
+    background: #0a0a0a;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    width: 130px;
+    height: 48px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.account-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  .graph-details {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  img {
+    height: 100px;
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+.account-section .bal {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-bottom: 0;
+}
+.account-section .hold {
+  color: #2a2a2a;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+}
+.account-section .account-pay {
+  h1 {
+    font-size: 20px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #2a2a2a;
+    margin-bottom: 8px;
+  }
+  .hold {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #000;
+  }
+}
+
+.account-section .funds-hold {
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+}
+.account-section .account-hold {
+  border-top: 1px solid #ebebeb;
+  padding: 1.71rem;
+  margin-top: 1.6rem;
+  max-width: 75%;
+  h1 {
+    color: #2a2a2a;
+  }
+}
+
+.reference-overview {
+  position: relative;
+}
+.for-analytics {
+  position: relative;
+  background: transparent;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1.5px solid #000;
+}
+.reference-overview,
+.for-analytics:focus {
+  outline: none;
+}
+.reference-overview div > p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2a2a2a;
+  margin-bottom: 0;
+  padding: 5px 9px;
+}
+.reference-overview .popout-analytics .currency-list {
+  border-bottom: 1px solid #ebebeb;
+  cursor: pointer;
+}
+.reference-overview div > p {
+  display: flex;
+  align-items: center;
+  border-bottom: 0;
+}
+.popout-analytics {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  background: #ffffff;
+  color: white;
+  min-width: 100px;
+  border-radius: 5px;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  top: 3.5rem;
+}
+.reference-overview:hover > .popout-analytics,
+.reference-overview:focus > .popout-analytics,
+.reference-overview:focus-within > .popout-analytics {
+  visibility: visible;
+}
+
+.remove-shadow {
+  box-shadow: none !important;
+}
+
+.topbar {
+  height: 0 !important;
+}
+
+.topbar .top-navbar {
+  background: #fff;
+}
+
+.topbar .top-navbar .navbar-header .navbar-brand {
+  background: #fffbf7 !important;
+  backdrop-filter: blur(20px);
+  padding: 0;
+  border: 1px solid #fffbf7 !important;
+}
+.custom-sidebar {
+  background: #fffbf7 !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(20px);
+  .sidebar-nav {
+    ul {
+      .sidebar-item {
+        .sidebar-link {
+          color: #000;
+          padding: 20px 15px;
+          &:hover {
+            color: #ef2c5a;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+          }
+          &.active {
+            color: #ef2c5a;
+            font-weight: bold;
+          }
+          i {
+            color: #000;
+          }
+          &:hover i {
+            color: #ef2c5a;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll-sidebar {
+  border-top: 1px solid rgba(196, 196, 196, 0.2) !important;
+}
+
+.logo-style {
+  height: 25px;
+  margin-left: 1rem;
+}
+.pay-out {
+  color: #2a2a2a;
+  padding: 20px 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.topbar .header-mobile {
+  background: #fffbf7 !important;
+}
+.main-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2a2a2a;
+  margin: 1rem 1.5rem;
+}
+
+.payout-mobile {
+  padding: 15px 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+//   for mobile
+
+@media only screen and (max-width: 991px) {
+  .wire-days {
+    flex-direction: column;
+    width: 100% !important;
+    margin-top: 30px;
+    .wire-email {
+      margin: 10px 0;
+    }
+    .download {
+      margin-bottom: 15px;
+    }
+  }
+
+  .dashboard-conts {
+    flex-wrap: wrap;
+  }
+  .account-section {
+    margin: 0 0 15px 0;
+  }
+  .account-section:nth-of-type(2) {
+    margin: 0 0 15px 0;
+  }
+  .account-section:nth-of-type(3) {
+    margin: 0 0 15px 0;
+  }
+  .chart-button .chart-sect {
+    width: 100%;
+  }
+  .chart-button {
+    flex-direction: column;
+    .send-wire {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+  .payout-mobile {
+    flex-direction: column;
+  }
+  .calendar-mobile {
+    flex-direction: column;
+    width: 100%;
+    .admin-date {
+      margin: 1rem 0;
+      min-width: 100%;
+    }
+  }
+  .cal-none {
+    display: none;
+  }
+  .dash-btn .payout {
+    width: 100%;
+  }
+  .account-section {
+    flex-wrap: wrap;
+  }
+  .mobile-input {
+    margin-top: 1rem;
+  }
+  .topbar .top-navbar {
+    background: rgba(196, 196, 196, 0.3) !important;
+  }
+
+  .mobile-middle {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .topbar .top-navbar .navbar-header .navbar-brand {
+    padding: 0 10px 0 10px;
+    border: 0px !important;
+  }
+  .dash-btn input {
+    min-width: 100%;
+  }
+}
+
+.dashboard-conts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table {
+  padding: 35px 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.wire-days {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+  a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    &:hover {
+      color: #ef2c5a;
+    }
+  }
+  .download {
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    background: transparent;
+    padding: 10px 20px;
+    min-width: 160px;
+  }
+}
+
+.wire-email {
+  position: relative;
+  input {
+    border: 1px solid #ebebeb;
     border-radius: 4px;
     height: 42px;
     text-indent: 1rem;
@@ -55,267 +487,67 @@
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-}
-.dash-btn .payout {
-    background: #3D8F83;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 22px;
-    height: 42px;
-    cursor: pointer;
-    border: 0;
-    width: 100px;
-}
-.dash-btn .admin-date {
-    border: 1px solid #EBEBEB;
-    border-radius: 4px;
-    height: 42px;
-    text-indent: 1rem;
-    min-width: 180px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
-
-.page-wrapper {
-    background: #fff !important;
-}
-
-.calendar-svg {
+  }
+  .arrow-down {
     position: absolute;
-    right: 25px;
+    right: 16px;
     top: 14px;
+  }
 }
 
-.account-section {
-    border: 1px solid #EBEBEB;
-    border-radius: 10px;
+.chart-sect {
+  width: 60%;
+  height: 280px;
+  border: 1.5px solid #0a0a0a;
+  border-radius: 8px;
 }
-.account-section  {
+
+.chart-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-bar-menu {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 20px;
+  button {
+    background: transparent;
+    border: 1px solid #0a0a0a;
+    border-radius: 8px;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.account-section .bal {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #2C665D;
-    margin-bottom: 0;
-}
-.account-section .hold {
-    color: #2A2A2A;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 0;
-}
-.account-section .account-pay {
-    margin-top: 2rem;
-    border-top: 1px solid #EBEBEB;
-    h1 {
-    font-size: 36px;
-    line-height: 43px;
-    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    letter-spacing: 0.1px;
-    color: #2A2A2A;
-    margin-bottom: 8px;
-    }
-    .hold {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1px;
-    color: #A6ABB2;
-    }
-}
-
-.account-section .funds-hold {
-    width: 100%;
-    background: #F5F5F5;
-    border: 1px solid #EBEBEB;
-    border-radius: 10px;
-}
-.account-section .account-hold {
-    border-top: 1px solid #EBEBEB;
-    padding: 1.71rem;
-    margin-top: 1.6rem;
-    max-width: 75%;
-    h1 {
-        color: #2A2A2A;
-    }
-}
-
-.reference-overview {
-    position: relative;
-  }
-  .for-analytics {
-      position: relative;
-        background: #F5F5F5;
-      border-radius: 5px;
-      padding: .5rem;
-      cursor: pointer;
-  }
-  .reference-overview,
-  .for-analytics:focus {
-      outline: none;
-  }
-  .reference-overview div > p {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #2A2A2A;
-    margin-bottom: 0;
-    padding: 5px 9px;
-  }
-  .reference-overview .popout-analytics .currency-list {
-    border-bottom: 1px solid #EBEBEB;
-    cursor: pointer;
-  }
-  .reference-overview div > p {
-    display: flex;
-    align-items: center;
-    border-bottom: 0;   
-  }
-  .popout-analytics {
-    position: absolute;
-    visibility: hidden;
-    right: 0;
-    background: #FFFFFF;
-    color: white;
-    min-width: 100px;
-    border-radius: 5px;
-    z-index: 1;
-    width: 100%;
-    border: 1px solid #EBEBEB;
-    top: 3.5rem;
-
-  }
-  .reference-overview:hover > .popout-analytics,
-  .reference-overview:focus > .popout-analytics,
-  .reference-overview:focus-within > .popout-analytics {
-    visibility: visible;
-  }
-
-  .remove-shadow {
-      box-shadow: none !important;
-  }
-
-  .topbar {
-      height: 0 !important;
-  }
-
-  .topbar .top-navbar {
-      background: #Fff;
-  }
-
-  .topbar .top-navbar .navbar-header .navbar-brand {
-    background:rgba(196, 196, 196, 0) !important;
-    backdrop-filter: blur(20px);
-    padding: 0;
-    border: 1px solid rgba(196, 196, 196, 0) !important;
-  }
-  .custom-sidebar {
-    background:rgba(196, 196, 196, 0.3) !important;
-    box-shadow: none !important;
-    backdrop-filter: blur(20px);
-    .sidebar-nav {
-        ul {
-            .sidebar-item {
-                .sidebar-link {
-                    color: #A6ABB2;
-                    padding: 20px 15px;
-                    &:hover {
-                        color: #2A2A2A;
-                        background: #F5F5F5;
-                        font-weight: bold;
-                        transition: .3s ease-in-out;
-                    }
-                    &.active {
-                        background: #fff;
-                    }
-                    i {
-                        color: #A6ABB2;
-                    }
-                    &:hover i {
-                        color: #2C665D;
-                    }
-                }
-            }
-        }
-    }
-  }
-
-  .scroll-sidebar {
-      border-top: 1px solid rgba(196, 196, 196, 0.2) !important;
-  }
-
-  .logo-style {
-      height: 25px;
-      margin-left: 1rem;
-  }
-  .pay-out {
-      color: #2A2A2A;
-  }
-  .topbar .header-mobile {
-      background: rgba(196, 196, 196, 0.3) !important;
-  }
-  .main-title {
+    padding: 12px 20px;
+    height: 40px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #2A2A2A;
-    margin: 1rem 1.5rem;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+  }
 }
 
-
-//   for mobile
-
-@media only screen and (max-width: 991px) {
-    .payout-mobile {
-        flex-direction: column;
-    }
-    .calendar-mobile {
-        flex-direction: column;
-        width: 100%;
-        .admin-date {
-            margin: 1rem 0;
-            min-width: 100%;
-        }
-    }
-    .cal-none {
-        display: none;
-    }
-    .dash-btn .payout {
-        width: 100%;
-    }
-    .account-section {
-        flex-wrap: wrap;
-    }
-    .mobile-input {
-        margin-top: 1rem;
-    }
-    .topbar .top-navbar {
-        background: rgba(196, 196, 196, 0.3) !important;;
-    }
-
-    .mobile-middle {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-    }
-    .topbar .top-navbar .navbar-header .navbar-brand {
-        padding: 0 10px 0 10px;
-        border: 0px !important;
-    }
-    .dash-btn input {
-        min-width: 100%;
-    }
+.support-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ef2c5a;
+  border-radius: 39px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  p {
+    margin: 0;
+  }
+  span {
+    padding-right: 10px;
+  }
 }

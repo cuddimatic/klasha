@@ -4,17 +4,15 @@ import {
     Navbar,
     NavbarBrand,
     Collapse,
-    CardTitle,
 } from 'reactstrap';
 
-import {ReactComponent as NotifyIcon} from '../../assets/images/notifyIcon.svg'
 import {ReactComponent as UserIcon} from '../../assets/images/userIcon.svg'
 
 /*--------------------------------------------------------------------------------*/
 /* Import images which are need for the HEADER                                    */
 /*--------------------------------------------------------------------------------*/
-import coincordLogo from '../../assets/svgs/logo.svg';
-import logoLight from '../../assets/svgs/logo.svg';
+import klashaLogo from '../../assets/images/klasha.png';
+import logoLight from '../../assets/images/klasha.png';
 
 const Header = () => {
 
@@ -42,7 +40,7 @@ const Header = () => {
                             />
                         </b> */}
                         <span className="logo-text">
-                            <img src={coincordLogo} alt="homepage" className="dark-logo logo-style" />
+                            <img src={klashaLogo} alt="homepage" className="dark-logo logo-style" />
                             <img
                                 src={logoLight}
                                 className="light-logo"
@@ -58,14 +56,9 @@ const Header = () => {
                     </button>
                 </div>
                 <Collapse className="navbarbg" navbar data-navbarbg="skin6" >
-                    <div className="ml-4">
-                        <CardTitle className="mb-0">Balances</CardTitle>
-                        <p className="mb-0">Today, 19th October 2020</p>
-                    </div>
                     <Nav className="ml-auto float-right" navbar>
                         
                         <div className="d-flex mr-4">
-                            <NotifyIcon />
                             <UserIcon className="ml-3" />
                         </div>
                     </Nav>

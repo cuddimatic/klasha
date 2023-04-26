@@ -60,7 +60,7 @@ const Fulllayout = (props) => {
             {/* Page Main-Content                                                              */}
             {/*--------------------------------------------------------------------------------*/}
             <div className="page-wrapper d-block">
-                <div className="page-content container-fluid background-full">
+                <div className="page-content container-fluid background-full mt-5 pt-5">
                     <Switch>
                         {ThemeRoutes.map((prop, key) => {
                             if (prop.redirect) {

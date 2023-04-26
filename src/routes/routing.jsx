@@ -22,27 +22,45 @@ var ThemeRoutes = [
     component: Alerts
   },
   {
-    path: '/customers',
-    name: 'Customers',
+    path: '/transactions',
+    name: 'Transactions',
     icon: 'fas fa-users',
     component: Badges
   },
   {
     path: '/analytics',
     name: 'Analytics',
+    icon: 'fas fa-users',
+    component: Badges
+  },
+  {
+    path: '/marketing',
+    name: 'Marketing',
+    icon: 'fas fa-users',
+    component: Badges
+  },
+  {
+    path: '/rates',
+    name: 'Exchange rates',
+    icon: 'fas fa-users',
+    component: Badges
+  },
+  {
+    path: '/rates',
+    name: 'Exchange rates',
     icon: 'fas fa-chart-line',
     component: Buttons,
     show_if_ana: true
   },
   {
-    path: '/settings',
-    name: 'Settings',
+    path: '/checkout',
+    name: 'Checkout',
     icon: 'fas fa-sliders-h',
     component: Cards
   },
   {
-    path: '/team',
-    name: 'Team',
+    path: '/links',
+    name: 'Payment Links',
     icon: 'far fa-star',
     component: LayoutComponent
   },
@@ -50,12 +68,12 @@ var ThemeRoutes = [
     path: '/contact',
     name: 'Contact',
     icon: 'mdi mdi-phone',
-    component: PaginationComponent
+    component: PaginationComponent,
+    show_if_send: true
   },
   {
-    path: '/logout',
-    name: 'Logout',
-    icon: 'fas fa-sign-out-alt',
+    path: '/Wire',
+    name: 'Wire',
     component: PopoverComponent
   },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
