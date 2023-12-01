@@ -1,11 +1,11 @@
 import React from 'react';
-import { Projects } from '../../components/dashboard-components';
+import { Projects } from '../components/dashboard-components';
 import {
     Row,
     Col
 } from 'reactstrap';
 
-const badge = () => {
+const transactions = () => {
     return (
         <div>
             <Row>
@@ -18,4 +18,4 @@ const badge = () => {
     );
 };
 
-export default badge;
+export default transactions;

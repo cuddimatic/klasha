@@ -1,6 +1,6 @@
 import React from 'react';
 
-const button = () => {
+const analytics = () => {
     return (
         <div>
             <h4 className="d-flex justify-content-center">Analytics Screen</h4>
@@ -9,4 +9,4 @@ const button = () => {
     );
 };
 
-export default button;
+export default analytics;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const popover = () => {
+const wire = () => {
     return (
         <div>
             <h4 className="d-flex justify-content-center">Wire Screen</h4>
@@ -9,4 +9,4 @@ const popover = () => {
     );
 };
 
-export default popover;
+export default wire;

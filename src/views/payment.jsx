@@ -1,6 +1,6 @@
 import React from 'react';
 
-const layout = () => {
+const payment = () => {
     return (
         <div>
             <h4 className="d-flex justify-content-center">Payment Screen</h4>
@@ -9,4 +9,4 @@ const layout = () => {
     );
 };
 
-export default layout;
+export default payment;

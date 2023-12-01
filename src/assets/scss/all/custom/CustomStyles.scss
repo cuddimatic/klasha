@@ -299,8 +299,8 @@
     ul {
       .sidebar-item {
         .sidebar-link {
-          color: #000;
-          padding: 20px 15px;
+          color: #0A0A0A;
+          padding: 15px;
           &:hover {
             color: #ef2c5a;
             font-weight: bold;
@@ -311,7 +311,7 @@
             font-weight: bold;
           }
           i {
-            color: #000;
+            color: #0A0A0A;
           }
           &:hover i {
             color: #ef2c5a;
@@ -341,10 +341,10 @@
   background: #fffbf7 !important;
 }
 .main-title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #2a2a2a;
+  color: #8D8D8D;
   margin: 1rem 1.5rem;
 }
 
@@ -500,6 +500,7 @@
   height: 280px;
   border: 1.5px solid #0a0a0a;
   border-radius: 8px;
+  margin-top: 5px;
 }
 
 .chart-button {
@@ -550,4 +551,8 @@
   span {
     padding-right: 10px;
   }
+}
+
+.page-item .page-link {
+  color: #A39D9E;
 }

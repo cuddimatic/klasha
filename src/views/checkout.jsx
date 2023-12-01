@@ -1,6 +1,6 @@
 import React from 'react';
 
-const cards = () => {
+const checkout = () => {
     return (
         <div>
             <h4 className="d-flex justify-content-center">Checkout Screen</h4>
@@ -9,4 +9,4 @@ const cards = () => {
     );
 };
 
-export default cards;
+export default checkout;

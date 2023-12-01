@@ -4,8 +4,7 @@ import { Nav } from "reactstrap";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "../../assets/scss/all/custom/CustomStyles.scss";
 import { ReactComponent as HelpIcon } from "../../assets/svgs/help.svg";
-import { ReactComponent as ChevLeftIcon} from "../../assets/svgs/chevLeft.svg";
-
+import { ReactComponent as ChevLeftIcon } from "../../assets/svgs/chevLeft.svg";
 
 const Sidebar = (props) => {
   /*--------------------------------------------------------------------------------*/
@@ -80,9 +79,19 @@ const Sidebar = (props) => {
       </div>
       <div className="side-bar-menu">
         <div className="support-button">
-          <p><span><HelpIcon /></span>Support</p>
+          <p>
+            <span>
+              <HelpIcon />
+            </span>
+            Support
+          </p>
         </div>
-        <button><span><ChevLeftIcon /></span> Hide panel</button>
+        <button>
+          <span>
+            <ChevLeftIcon />
+          </span>{" "}
+          Hide panel
+        </button>
       </div>
     </aside>
   );

@@ -1,14 +1,18 @@
 import React from "react";
 
-import { CardTitle, Table } from "reactstrap";
+import {
+  CardTitle,
+  Table,
+  Pagination,
+  PaginationItem,
+  PaginationLink,
+} from "reactstrap";
 import "../../../assets/scss/all/custom/CustomStyles.scss";
 import "react-datepicker/dist/react-datepicker.css";
 import { ReactComponent as SearchIcon } from "../../../assets/svgs/searchIcon.svg";
 
 const Projects = () => {
-
   return (
-
     <div className="dash-btn">
       <CardTitle className="mb-0 pay-out">Transaction history</CardTitle>
 
@@ -44,7 +48,7 @@ const Projects = () => {
             <td>Mike Owen</td>
             <td>0223337281</td>
             <td>$1,200</td>
-            <td>25th November, 2020</td>
+            <td>24.08.2021</td>
             <td>Pending</td>
           </tr>
           <tr>
@@ -53,7 +57,16 @@ const Projects = () => {
             <td>Mike Owen</td>
             <td>0223337281</td>
             <td>$1,200</td>
-            <td>25th November, 2020</td>
+            <td>24.08.2021</td>
+            <td>Successful</td>
+          </tr>
+          <tr>
+            <td>GB124QWERTY12346</td>
+            <td>GTB</td>
+            <td>Mike Owen</td>
+            <td>0223337281</td>
+            <td>$1,200</td>
+            <td>24.08.2021</td>
             <td>Pending</td>
           </tr>
           <tr>
@@ -62,20 +75,36 @@ const Projects = () => {
             <td>Mike Owen</td>
             <td>0223337281</td>
             <td>$1,200</td>
-            <td>25th November, 2020</td>
-            <td>Pending</td>
-          </tr>
-          <tr>
-            <td>GB124QWERTY12346</td>
-            <td>GTB</td>
-            <td>Mike Owen</td>
-            <td>0223337281</td>
-            <td>$1,200</td>
-            <td>25th November, 2020</td>
+            <td>24.08.2021</td>
             <td>Pending</td>
           </tr>
         </tbody>
       </Table>
+      <div className="d-flex justify-content-end">
+        <Pagination size="md">
+          <PaginationItem>
+            <PaginationLink previous />
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink>1</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink>2</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink>3</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink>4</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink>5</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink next />
+          </PaginationItem>
+        </Pagination>
+      </div>
     </div>
   );
 };

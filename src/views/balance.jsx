@@ -1,6 +1,6 @@
 import React from 'react';
 
-const alert = () => {
+const balance = () => {
     return (
         <div>
             <h4 className="d-flex justify-content-center">Balances Screen</h4>
@@ -8,4 +8,4 @@ const alert = () => {
     );
 };
 
-export default alert;
+export default balance;

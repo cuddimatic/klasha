@@ -1,6 +1,6 @@
 import React from 'react';
 
-const pagination = () => {
+const contact = () => {
     return (
         <div>
             <h4 className="d-flex justify-content-center">Contact Screen</h4>
@@ -9,4 +9,4 @@ const pagination = () => {
     );
 };
 
-export default pagination;
+export default contact;
