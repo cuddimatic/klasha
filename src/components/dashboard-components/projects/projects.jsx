@@ -7,9 +7,9 @@ import {
   PaginationItem,
   PaginationLink,
 } from "reactstrap";
-import "../../../assets/scss/all/custom/CustomStyles.scss";
-import "react-datepicker/dist/react-datepicker.css";
+
 import { ReactComponent as SearchIcon } from "../../../assets/svgs/searchIcon.svg";
+import "../../../assets/scss/all/custom/CustomStyles.scss";
 
 const Projects = () => {
   return (

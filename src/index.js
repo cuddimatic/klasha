@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import indexRoutes from "./routes/index.jsx";
 import { Route, Switch } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
-
 import "./assets/scss/style.css";
 
 ReactDOM.render(
